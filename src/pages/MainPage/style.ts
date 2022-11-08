@@ -44,6 +44,7 @@ export const Btn = styled.button`
   font-size: 16px;
   line-height: 18px;
   color: rgb(255, 255, 255);
+  cursor: pointer;
 `;
 export const Woojoo = styled.div`
   margin-top: 50px;
@@ -121,6 +122,7 @@ export const ToggleSub = styled.div`
 `;
 export const ToggleIcon = styled.div`
   font-size: 40px;
+  cursor: pointer;
 `;
 export const ToggleCon = styled.div`
   margin-top: 18px;

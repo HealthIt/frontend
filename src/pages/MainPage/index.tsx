@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as S from './style';
 import { IoRocketOutline } from 'react-icons/io5';
-import { BiChevronRight } from 'react-icons/bi';
+import { BiChevronRight, BiChevronDown } from 'react-icons/bi';
+import { MainToggle } from '../../components/common/MainToggle';
 
 export const MainPage = () => {
+  const [tog, setTog] = useState(false);
+
+  const test = () => {
+    console.log('test');
+    setTog(!tog);
+  };
   return (
     <div>
       <S.Wrap>
@@ -47,13 +54,11 @@ export const MainPage = () => {
         <S.ToggleWrap>
           <S.ToggleSub>
             헬스잇, BMI 테스트는 어떤 원리로 진행되나요?
-            <S.ToggleIcon>
-              <BiChevronRight />
+            <S.ToggleIcon onClick={test}>
+              {tog ? <BiChevronDown /> : <BiChevronRight />}
             </S.ToggleIcon>
           </S.ToggleSub>
-          <S.ToggleCon>
-            가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사가나다라마바사
-          </S.ToggleCon>
+          {tog ? <MainToggle /> : ''}
         </S.ToggleWrap>
       </S.Wrap>
     </div>
