@@ -3,10 +3,15 @@ import * as S from './style';
 import { IoRocketOutline } from 'react-icons/io5';
 import { BiChevronRight, BiChevronDown } from 'react-icons/bi';
 import { MainToggle } from '../../components/common/MainToggle';
+import { useNavigate } from 'react-router-dom';
 
 export const MainPage = () => {
+  const navigate = useNavigate();
   const [tog, setTog] = useState(false);
 
+  const mainNav = () => {
+    navigate('/bmi');
+  };
   const test = () => {
     console.log('test');
     setTog(!tog);
@@ -32,7 +37,7 @@ export const MainPage = () => {
             <br />
             그리고 어디까지 성장하는지
           </S.MidSub>
-          <S.Btn>지금 시작하기</S.Btn>
+          <S.Btn onClick={mainNav}>지금 시작하기</S.Btn>
           <S.Woojoo>우주인 이미지</S.Woojoo>
           <S.Bot>
             건강한 성장을 위해
