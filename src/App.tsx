@@ -4,6 +4,7 @@ import './reset.css';
 import { Routes, Route } from 'react-router-dom';
 import { MainPage, BMIPage, RecommendPage, SearchPage, DetailPage } from './pages';
 import { Header } from './components/common/Header';
+import { Footer } from './components/common/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/search' element={<SearchPage />} />
         <Route path='/detail' element={<DetailPage />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
