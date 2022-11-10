@@ -1,9 +1,0 @@
-* {
-  margin: 0;
-  font-family: 'AppleSDGothicNeoM' !important;
-  src: url('./assets/fonts/AppleSDGothicNeoM.ttf');
-}
-.container {
-  width: 100%;
-  margin: 0 auto;
-}

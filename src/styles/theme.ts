@@ -1,3 +1,10 @@
+//색상
+const palette = {
+  navy: 'rgb(0, 26, 70)',
+  gray: 'rgb(174, 184, 196)',
+  skyblue: 'rgb(101, 159, 255)',
+};
+
 // 레이아웃
 const common = {
   flexCenter: `
@@ -27,6 +34,6 @@ const common = {
       justify-content: flex-start;
     `,
 };
-const theme = { common };
+const theme = { palette, common };
 
 export default theme;
