@@ -6,11 +6,6 @@ export default createGlobalStyle`
   font-family: 'AppleSDGothicNeoM' !important;
   src: url('./assets/fonts/AppleSDGothicNeoM.ttf');
 }
-html {
-  font-size: 62.5%;
-  /* rem 값의 기준을 잡기 위함 16px -> 10px */
-  background-color: #F4F6F9;
-}
 body {
   margin: 0;
 }
