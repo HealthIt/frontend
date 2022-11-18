@@ -1,8 +1,11 @@
 //색상
 const palette = {
-  navy: 'rgb(0, 26, 70)',
-  gray: 'rgb(174, 184, 196)',
-  skyblue: 'rgb(101, 159, 255)',
+  Ellipse31: '#AEB8C4',
+  Ellipse32: '#191919',
+  Ellipse33: '#0D6717',
+  Ellipse34: '#D8FADC',
+  Ellipse35: '#60BF6A',
+  Ellipse36: '#7EC585',
 };
 
 // 레이아웃
