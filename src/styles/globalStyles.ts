@@ -3,8 +3,11 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
 * {
   box-sizing: border-box;
-  font-family: 'AppleSDGothicNeoM' !important;
-  src: url('./assets/fonts/AppleSDGothicNeoM.ttf');
+  font-family: 'Pretendard Variable' !important;
+}
+html {
+  font-size: 62.5%;
+  background-color: #F4F6F9;
 }
 body {
   margin: 0;
@@ -15,8 +18,9 @@ input, textarea {
   -ms-user-select: auto;
   user-select: auto;
 }
-input:focus {
-  outline: none;
+input {
+  border: none;
+  :focus {outline: none}
 }
 button {
   border: none;
@@ -27,5 +31,11 @@ button {
 a{
   text-decoration: none;
   color: inherit;
+}
+ul {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
 }
 `;
