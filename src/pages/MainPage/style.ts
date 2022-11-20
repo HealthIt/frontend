@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 export const Container = styled.div`
   width: 100%;
   height: 100%;
@@ -45,6 +46,7 @@ export const BannerInner = styled.div`
 export const Section1 = styled.div`
   /* background-color: mistyrose; */
   margin-top: 140px;
+  margin-bottom: 300px;
   font-size: 50px;
   font-weight: 700;
   display: flex;
@@ -63,7 +65,7 @@ export const Section1 = styled.div`
 `;
 export const Section2 = styled.div`
   /* background-color: mistyrose; */
-  margin-top: 338px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +83,8 @@ export const First = styled.div`
   width: 1280px;
   height: 448px;
   border-radius: 20px;
-  background-color: lavender;
+  background-image: url(https://user-images.githubusercontent.com/91241596/202880039-290294c1-0ffa-428e-a184-4b0a37e9491e.png);
+  z-index: 3;
 `;
 export const Inner = styled.div`
   margin: 92px 0 0 110px;
@@ -104,56 +107,87 @@ export const Inner = styled.div`
   }
 `;
 export const ImgWrap = styled.div`
-  background-color: salmon;
+  /* background-color: salmon; */
   width: 1280px;
   display: flex;
   justify-content: space-between;
+  z-index: 3;
 `;
 export const Sec = styled.div`
   width: 620px;
   height: 636px;
   border-radius: 20px;
-  background-color: lavender;
+  background-image: url(https://user-images.githubusercontent.com/91241596/202880155-77f81679-5373-4111-9b5c-313a9fa01bfb.png);
 `;
 export const Thi = styled.div`
   width: 620px;
   height: 636px;
   border-radius: 20px;
-  background-color: lavender;
+  background-image: url(https://user-images.githubusercontent.com/91241596/202880219-0c1fd67f-1c31-4cac-a868-6484eaa31b41.png);
 `;
 export const Fou = styled.div`
-  margin-top: 88px;
+  margin-top: 40px;
   width: 1280px;
   height: 448px;
   border-radius: 20px;
-  background-color: lavender;
+  background-image: url(https://user-images.githubusercontent.com/91241596/202880238-59b32011-b2a0-4cd8-8d99-9e19c1464c57.png);
+`;
+export const Img = styled.div`
+  display: flex;
 `;
 export const Tomato = styled.div`
-  width: 334px;
-  height: 430px;
-  background-image: url(https://user-images.githubusercontent.com/91241596/202796976-cf2002fc-7944-497e-bcea-03931979aef9.png);
+  width: 290px;
+  height: 290px;
+  background-image: url(https://user-images.githubusercontent.com/91241596/202879541-0f9abe19-d990-4b72-90af-b68cfbf210a7.png);
   z-index: 0;
   position: relative;
-  bottom: 2500px;
-  right: 600px;
+  bottom: 1800px;
+  right: 180px;
 `;
 export const Paprika = styled.div`
-  width: 590px;
-  height: 706px;
-  background-image: url(https://user-images.githubusercontent.com/91241596/202798502-a3c72f26-2107-4948-8d25-b4e80ffdfb1c.png);
+  width: 290px;
+  height: 290px;
+  background-image: url(https://user-images.githubusercontent.com/91241596/202879591-9bb600e5-295d-4fe3-8ece-44fa882d5ee2.png);
   z-index: 0;
   position: relative;
-  bottom: 2000px;
-  left: 500px;
+  bottom: 1350px;
+  left: 800px;
 `;
 export const Leaf = styled.div`
-  width: 350px;
-  height: 402px;
-  background-image: url(https://user-images.githubusercontent.com/91241596/202802004-95ad7995-dbb3-4005-8437-70bcdbc4c69d.png);
+  width: 290px;
+  height: 290px;
+  background-image: url(https://user-images.githubusercontent.com/91241596/202879596-35d811a4-c8ab-4b38-83ed-7d63696c25c8.png);
   z-index: 0;
   position: relative;
-  bottom: 1700px;
-  right: 600px;
+  top: 100px;
+  right: 550px;
+`;
+export const TopLogo = styled.div`
+  width: 110px;
+  height: 90px;
+  background-image: url(https://user-images.githubusercontent.com/91241596/202879599-a02b5e2d-422b-4b76-8f65-11e67e166dc0.png);
+  z-index: 1;
+  position: relative;
+  bottom: 2530px;
+  right: 220px;
+`;
+export const MidLogo = styled.div`
+  width: 110px;
+  height: 90px;
+  background-image: url(https://user-images.githubusercontent.com/91241596/202879608-0de0c576-a28c-41fd-8c86-9ac54057c1f8.png);
+  z-index: 1;
+  position: relative;
+  bottom: 2000px;
+  right: 560px;
+`;
+export const BotLogo = styled.div`
+  width: 110px;
+  height: 90px;
+  background-image: url(https://user-images.githubusercontent.com/91241596/202879608-0de0c576-a28c-41fd-8c86-9ac54057c1f8.png);
+  z-index: 1;
+  position: relative;
+  top: 270px;
+  right: 680px;
 `;
 export const ToggleWrap = styled.div`
   margin: 174px 0 74px;

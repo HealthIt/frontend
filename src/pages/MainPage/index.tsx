@@ -51,44 +51,52 @@ export const MainPage = () => {
         </S.Section2>
         <S.First>
           <S.Inner>
-            <div>주간 칼로리 소비량 그래프</div>
+            {/* <div>주간 칼로리 소비량 그래프</div>
             <div>
               식단관리 잘하고 <br /> 계신가요?
             </div>
             <div>
               최신 데이터 기술로 <br /> 정확한 칼로리 소비량을 확인해보세요.
-            </div>
+            </div> */}
           </S.Inner>
         </S.First>
         <S.ImgWrap>
           <S.Sec>
-            <S.Inner>
+            {/* <S.Inner>
               <div>일일 영양소 섭취</div>
               <div>
                 영양소 보충은 <br /> 잘하고 계신가요?
               </div>
-            </S.Inner>
+            </S.Inner> */}
           </S.Sec>
           <S.Thi>
             <S.Inner>
-              <div>일일 권장 칼로리</div>
+              {/* <div>일일 권장 칼로리</div>
               <div>
                 얼마 정도만 <br /> 먹어야할까요?
-              </div>
+              </div> */}
             </S.Inner>
           </S.Thi>
         </S.ImgWrap>
         <S.Fou>
           <S.Inner>
-            <div>일일 칼로리 요약</div>
+            {/* <div>일일 칼로리 요약</div>
             <div>
               얼마나 더 <br /> 먹을 수 있을까요?
             </div>
             <div>
               BMI에 맞춘 칼로리 요약 리포트로 <br /> 하루 칼로리를 확인해보세요.
-            </div>
+            </div> */}
           </S.Inner>
         </S.Fou>
+        <S.Img>
+          <S.Tomato />
+          <S.Paprika />
+          <S.Leaf />
+          <S.TopLogo />
+          <S.MidLogo />
+          <S.BotLogo />
+        </S.Img>
         <S.Section2>
           <span>
             헬스-잇 <br />
@@ -100,9 +108,7 @@ export const MainPage = () => {
             확실하게 알려드려요 <br />
           </span>
         </S.Section2>
-        <S.Tomato />
-        <S.Paprika />
-        <S.Leaf />
+
         <S.ToggleWrap>
           <S.ToggleSub>
             헬스잇, BMI 테스트는 어떤 원리로 진행되나요?
