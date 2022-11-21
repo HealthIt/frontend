@@ -1,6 +1,14 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { MainPage, BMIPage, RecommendPage, SearchPage, DetailPage, LoadingPage } from './pages';
+import {
+  MainPage,
+  BMIPage,
+  RecommendPage,
+  SearchPage,
+  DetailPage,
+  LoadingPage,
+  ErrorPage,
+} from './pages';
 import { Header } from './components/common/Header';
 import { Footer } from './components/common/Footer';
 import { ThemeProvider } from 'styled-components';
@@ -20,6 +28,7 @@ function App() {
           <Route path='/recommend' element={<RecommendPage />} />
           <Route path='/search' element={<SearchPage />} />
           <Route path='/detail' element={<DetailPage />} />
+          <Route path='/*' element={<ErrorPage />} />
         </Routes>
         <Footer />
       </ThemeProvider>
