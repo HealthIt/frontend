@@ -8,6 +8,7 @@ import {
   DetailPage,
   LoadingPage,
   ErrorPage,
+  ResultPage,
 } from './pages';
 import { Header } from './components/common/Header';
 import { Footer } from './components/common/Footer';
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/bmi' element={<BMIPage />} />
+          <Route path='/result' element={<ResultPage />} />
           <Route path='/loading' element={<LoadingPage />} />
           <Route path='/recommend' element={<RecommendPage />} />
           <Route path='/search' element={<SearchPage />} />
