@@ -6,8 +6,11 @@ export const Header = () => {
   return (
     <div>
       <S.Wrapper>
-        <S.Logo>헬스잇</S.Logo>
+        <S.Logo></S.Logo>
         <S.Menu>
+          <Link to='/'>
+            <S.MenuList>헬스잇</S.MenuList>
+          </Link>
           <Link to='/recommend'>
             <S.MenuList>식단보기</S.MenuList>
           </Link>

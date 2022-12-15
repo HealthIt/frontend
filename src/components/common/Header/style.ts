@@ -8,6 +8,9 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 export const Logo = styled.div`
+  background-image: url('https://user-images.githubusercontent.com/91241596/207931404-b802f9bf-ef70-492d-9f35-c3ab6b6f2685.png');
+  width: 180px;
+  height: 24px;
   font-size: 24px;
   line-height: 28px;
   position: absolute;
@@ -15,8 +18,9 @@ export const Logo = styled.div`
 `;
 export const Menu = styled.ul`
   display: flex;
-  font-size: 14px;
-  line-height: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
   position: absolute;
   right: 320px;
 `;
