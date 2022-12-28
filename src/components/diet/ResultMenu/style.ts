@@ -13,6 +13,7 @@ export const MenuWrapper = styled.div`
   margin-left: 20px;
   margin-right: 20px;
 
+  /* align-items: left; */
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -29,9 +30,12 @@ export const MenuImg = styled.div`
 `;
 export const TextWrapper = styled.div`
   margin-top: 18px;
-  /* display: flex;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  align-items: center; */
+  align-items: center;
+  /* text-align: left !important;
+  align-items: left !important; */
 `;
 export const MenuName = styled.div`
   font-weight: 700;
