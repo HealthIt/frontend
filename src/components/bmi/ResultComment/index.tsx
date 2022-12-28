@@ -6,6 +6,9 @@ import { useNavigate } from 'react-router-dom';
 
 export const ResultComment = () => {
   const navigate = useNavigate();
+  const onRecommend = () => {
+    navigate('/recommend');
+  };
   // console.log(bmi);
   const bmi = localStorage.BMI;
   const [topic, setTopic] = useState(<></>);
@@ -70,13 +73,7 @@ export const ResultComment = () => {
       <S.Wrapper>
         <div>{topic}</div>
         <div>{cont}</div>
-        <button
-          onClick={() => {
-            navigate('/recommend');
-          }}
-        >
-          추천식단 바로가기
-        </button>
+        <button onClick={onRecommend}>추천식단 바로가기</button>
       </S.Wrapper>
     </>
   );
