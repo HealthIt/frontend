@@ -10,8 +10,6 @@ import {
   ErrorPage,
   ResultPage,
 } from './pages';
-import { Header } from './components/common/Header';
-import { Footer } from './components/common/Footer';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/globalStyles';
 import theme from './styles/theme';
@@ -21,7 +19,7 @@ function App() {
     <div className='App'>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <Header />
+
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='/bmi' element={<BMIPage />} />
@@ -29,10 +27,11 @@ function App() {
           <Route path='/loading' element={<LoadingPage />} />
           <Route path='/recommend' element={<RecommendPage />} />
           <Route path='/search' element={<SearchPage />} />
-          <Route path='/detail' element={<DetailPage />} />
+          <Route path='/detail' element={<DetailPage />}>
+            <Route path=':detailId' element={<DetailPage />} />
+          </Route>
           <Route path='/*' element={<ErrorPage />} />
         </Routes>
-        <Footer />
       </ThemeProvider>
     </div>
   );
