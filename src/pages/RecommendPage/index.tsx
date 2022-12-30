@@ -5,6 +5,8 @@ import * as S from './style';
 import { HiOutlineSearch } from 'react-icons/hi';
 import { SearchMenu } from '../../components/diet/SearchMenu';
 import { useNavigate } from 'react-router-dom';
+import { Header } from '../../components/common/Header';
+import { Footer } from '../../components/common/Footer';
 
 export const RecommendPage = () => {
   const navigate = useNavigate();
@@ -16,7 +18,8 @@ export const RecommendPage = () => {
   };
   return (
     <>
-      <SearchMenu />
+      <Header />
+      {/* <SearchMenu /> */}
       <S.Wrapper>
         <div></div>
         <div>헬스-잇 추천 식단보기</div>
@@ -53,6 +56,7 @@ export const RecommendPage = () => {
           </S.Slide>
         </S.RecoDiet>
       </S.Wrapper>
+      <Footer />
     </>
   );
 };

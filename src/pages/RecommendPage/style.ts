@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  min-height: 100vh;
   overflow: hidden;
-  background-color: mistyrose;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
