@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
     height: 48px;
     background: #00780c;
     border-radius: 24px;
+    z-index: 50;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
