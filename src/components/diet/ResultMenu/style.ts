@@ -13,8 +13,8 @@ export const MenuWrapper = styled.div`
   margin-left: 20px;
   margin-right: 20px;
 
-  /* align-items: left; */
-  align-items: center;
+  align-items: left;
+  /* align-items: center; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -32,10 +32,11 @@ export const TextWrapper = styled.div`
   margin-top: 18px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
-  /* text-align: left !important;
-  align-items: left !important; */
+  /* text-align: center;
+  align-items: center; */
+  text-align: left !important;
+  align-items: left !important;
+  padding-left: 10px;
 `;
 export const MenuName = styled.div`
   font-weight: 700;

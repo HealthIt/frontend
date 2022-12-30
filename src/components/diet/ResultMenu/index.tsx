@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import * as S from './style';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export const ResultMenu = () => {
   const bmi = localStorage.BMI;
@@ -26,21 +27,26 @@ export const ResultMenu = () => {
   // // // keys {id, foodNm, calorie, img, irdntNames}
 
   const menuList = recoMenu.map((name) => {
+    console.log(name.id);
+    // const id = name.id;
+
     return (
       <S.MenuWrapper key={name.id}>
-        <S.MenuImg>
-          <img
-            src={name.img}
-            alt={name.foodNm}
-            width='400px'
-            height='300px'
-            style={{ borderRadius: '20px 20px 10px 10px ' }}
-          />{' '}
-        </S.MenuImg>
-        <S.TextWrapper>
-          <S.MenuName>{name.foodNm}</S.MenuName>
-          <S.MenuKcal>{name.calorie}Kcal</S.MenuKcal>
-        </S.TextWrapper>
+        <Link to={`/detail/${name.id}`}>
+          <S.MenuImg>
+            <img
+              src={name.img}
+              alt={name.foodNm}
+              width='400px'
+              height='300px'
+              style={{ borderRadius: '20px 20px 10px 10px ' }}
+            />
+          </S.MenuImg>
+          <S.TextWrapper>
+            <S.MenuName>{name.foodNm}</S.MenuName>
+            <S.MenuKcal>{name.calorie}Kcal</S.MenuKcal>
+          </S.TextWrapper>
+        </Link>
       </S.MenuWrapper>
     );
   });
@@ -48,7 +54,7 @@ export const ResultMenu = () => {
   return (
     <>
       <S.Wrapper>
-        {/* <button onClick={getMenu}>test</button> */}
+        <button onClick={getMenu}>test</button>
         {/* <S.MenuContainer>
           {recoMenu.map((name) => (
             <S.MenuWrapper key={name.id}>
