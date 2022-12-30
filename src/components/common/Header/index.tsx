@@ -1,12 +1,18 @@
 import React from 'react';
 import * as S from './style';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Header = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <S.Wrapper>
-        <S.Logo></S.Logo>
+        <S.Logo
+          onClick={() => {
+            navigate('/');
+          }}
+        ></S.Logo>
+
         <S.Menu>
           <Link to='/'>
             <S.MenuList>헬스잇</S.MenuList>

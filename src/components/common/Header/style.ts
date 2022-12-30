@@ -1,20 +1,24 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background-color: #fff;
+  background-color: #f8f8f8;
   width: 100%;
   height: 70px;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 export const Logo = styled.div`
-  background-image: url('https://user-images.githubusercontent.com/91241596/207931404-b802f9bf-ef70-492d-9f35-c3ab6b6f2685.png');
-  width: 180px;
+  background-image: url('https://user-images.githubusercontent.com/91241596/209869798-f1e6b622-6bbb-4190-9a3f-2e698b501022.png');
+  width: 212px;
   height: 24px;
   font-size: 24px;
   line-height: 28px;
   position: absolute;
   left: 320px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 `;
 export const Menu = styled.ul`
   display: flex;
