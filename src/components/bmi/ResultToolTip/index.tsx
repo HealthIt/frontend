@@ -22,7 +22,7 @@ export const ResultToolTip = () => {
     } else if (localStorage.BMI < 29.9) {
       console.log('경도비만');
       setStyle({ right: '-256px', color: '#77AE59' });
-    } else if (localStorage.BMI > 30) {
+    } else if (localStorage.BMI > 29.9) {
       console.log('중등도비만');
       setStyle({ right: '-512px', color: '#0D6717' });
     }
