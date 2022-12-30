@@ -7,3 +7,5 @@ export const ToggleCon = styled.div`
   line-height: 28px;
   color: rgb(174, 184, 196);
 `;
+export const Qusetion = styled.div``;
+export const Answer = styled.div``;
