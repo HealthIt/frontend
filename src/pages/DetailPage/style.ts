@@ -108,6 +108,7 @@ export const Bot = styled.div`
 export const BotL = styled.div`
   /* background-color: pink; */
   position: relative;
+  width: 300px;
   > div:first-child {
     font-weight: 700;
     font-size: 24px;
