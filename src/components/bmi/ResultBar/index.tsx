@@ -6,13 +6,13 @@ import * as S from './style';
 export const ResultBar = () => {
   const h = localStorage.Height;
   if (localStorage.BMI < 18.5) {
-    console.log('저체중');
+    // console.log('저체중');
   } else if (localStorage.BMI < 22.9) {
-    console.log('정상');
+    // console.log('정상');
   } else if (localStorage.BMI < 24.9) {
-    console.log('과체중');
+    // console.log('과체중');
   } else if (localStorage.BMI > 25) {
-    console.log('비만');
+    // console.log('비만');
   }
   return (
     <div>

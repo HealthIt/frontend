@@ -14,7 +14,7 @@ export const RecommendPage = () => {
   const [userInput, setUserInput] = useState('');
   const onInput = (e: any) => {
     setUserInput(e.target.value);
-    console.log(userInput);
+    // console.log(userInput);
     localStorage.setItem('search', e.target.value);
   };
   return (

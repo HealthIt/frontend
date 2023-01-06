@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import * as S from './style';
-import { BiChevronRight, BiChevronDown } from 'react-icons/bi';
 import { MainToggle } from '../../components/common/MainToggle';
 import { useNavigate } from 'react-router-dom';
 import { Scroll } from '../../components/common/Scroll';
@@ -9,18 +8,15 @@ import { Header } from '../../components/common/Header';
 import { Footer } from '../../components/common/Footer';
 
 export const MainPage = () => {
-  const [isScroll, setIsScroll] = useState();
   const [tog, setTog] = useState(false);
-  const [togId, setTogId] = useState('');
-  const [togMsg, setTogMsg] = useState('');
   const navigate = useNavigate();
   const nav = () => {
     navigate('/bmi');
   };
-  const test = () => {
-    console.log('test');
-    setTog(!tog);
-  };
+  // const test = () => {
+  //   console.log('test');
+  //   setTog(!tog);
+  // };
 
   return (
     <>

@@ -17,27 +17,27 @@ export const DetailPage = () => {
   // const [menu, setMenu] = useState();
   const [menus, setMenus] = useState<any>([]);
   const location = useLocation();
-  console.log('adfsf', location);
+  // console.log('adfsf', location);
   let params = useParams();
-  console.log('useParams', params);
-  console.log(params);
-  console.log(params.detailId);
+  // console.log('useParams', params);
+  // console.log(params);
+  // console.log(params.detailId);
   const menuId = params.detailId;
-  console.log('menuId', menuId);
+  // console.log('menuId', menuId);
 
   const getMenu = async () => {
     const response = await axios.get(`http://52.78.0.222/foods/v1/${menuId}`);
-    console.log('fetch', response);
+    // console.log('fetch', response);
     setMenus(response.data.data);
-    console.log('responseData', menus);
-    console.log(menus.foodNm);
+    // console.log('responseData', menus);
+    // console.log(menus.foodNm);
   };
   useEffect(() => {
     getMenu();
   }, []);
 
   const menuDetail = () => {
-    console.log('menuDetail:', menus);
+    // console.log('menuDetail:', menus);
     return <>{menus!.foodNm}</>;
   };
 

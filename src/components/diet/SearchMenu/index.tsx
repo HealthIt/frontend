@@ -13,7 +13,6 @@ export const SearchMenu = () => {
       axios.get(`http://52.78.0.222/foods/v1/?irdntNm=&bmi=&page=0&size=100`).then((response) => {
         setSearchMenu(response.data.data.content);
       });
-      console.log(searchMenu);
     } catch (error) {
       console.log(error);
     }

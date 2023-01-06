@@ -143,12 +143,11 @@ export const BMIPage = (e: any) => {
   //계산
   const onBMI = (e: any) => {
     e.preventDefault();
-    console.log(name, age, height, weight);
+    // console.log(name, age, height, weight);
     const bw = parseFloat(weight);
     const bh = parseFloat(height);
     const bmi = (bw / (bh * bh)).toFixed(2);
-    console.log('bmi', bmi);
-    // console.log('그아래', bw, bh);
+    // console.log('bmi', bmi);
     localStorage.setItem('Name', name);
     localStorage.setItem('Age', age);
     localStorage.setItem('Height', height);

@@ -26,7 +26,7 @@ const ToggleItem = ({ tog }: { tog: Toggle }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const onClick = () => {
-    console.log('sdf');
+    // console.log('sdf');
     setIsOpen(!isOpen);
   };
 

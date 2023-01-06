@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 export const ResultComment = () => {
   const bmi = localStorage.BMI;
-  console.log(bmi);
+  // console.log(bmi);
   const [topic, setTopic] = useState<any>(<></>);
   const [cont, setCont] = useState<any>(<></>);
   useEffect(() => {
@@ -19,7 +19,6 @@ export const ResultComment = () => {
           ,
         </>,
       );
-      console.log('저');
       setCont(
         <>
           <S.Content>
@@ -37,7 +36,6 @@ export const ResultComment = () => {
           </S.Topic>
         </>,
       );
-      console.log('정');
       setCont(
         <>
           <S.Content>
@@ -55,7 +53,6 @@ export const ResultComment = () => {
           </S.Topic>
         </>,
       );
-      console.log('과');
       setCont(
         <>
           <S.Content>
@@ -73,7 +70,6 @@ export const ResultComment = () => {
           </S.Topic>
         </>,
       );
-      console.log('경');
       setCont(
         <>
           <S.Content>
@@ -85,12 +81,11 @@ export const ResultComment = () => {
       );
     }
     return () => {
-      console.log('cleanup');
+      // console.log('cleanup');
     };
   }, [bmi]);
   const navigate = useNavigate();
   const onRecommend = () => {
-    console.log('sdf');
     navigate('/recommend');
   };
 
@@ -99,14 +94,7 @@ export const ResultComment = () => {
       <S.Wrapper>
         <div>{topic}</div>
         <div>{cont}</div>
-        <button
-          onClick={onRecommend}
-          onMouseMove={() => {
-            console.log('move');
-          }}
-        >
-          추천식단 바로가기
-        </button>
+        <button onClick={onRecommend}>추천식단 바로가기</button>
       </S.Wrapper>
     </>
   );

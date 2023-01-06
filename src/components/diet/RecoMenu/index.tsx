@@ -15,8 +15,8 @@ export const RecoMenu = () => {
     } catch (error) {
       console.log(error);
     }
-    console.log(recoMenu);
-    console.log('1', recoMenu[0]);
+    // console.log(recoMenu);
+    // console.log('1', recoMenu[0]);
   }
   useEffect(() => {
     getMenu();

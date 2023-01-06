@@ -15,8 +15,8 @@ export const ResultMenu = () => {
     } catch (error) {
       console.log(error);
     }
-    console.log(recoMenu);
-    console.log('1', recoMenu[0]);
+    // console.log(recoMenu);
+    // console.log('1', recoMenu[0]);
   }
   useEffect(() => {
     getMenu();
@@ -27,7 +27,7 @@ export const ResultMenu = () => {
   // // // keys {id, foodNm, calorie, img, irdntNames}
 
   const menuList = recoMenu.map((name) => {
-    console.log(name.id);
+    // console.log(name.id);
     // const id = name.id;
 
     return (
