@@ -21,14 +21,10 @@ export const MainPage = () => {
     console.log('test');
     setTog(!tog);
   };
-  window.addEventListener('scroll', function () {
-    console.log(this.window.scrollY);
-  });
 
   return (
     <>
       <Header />
-
       <S.Container>
         <S.Wrap>
           <S.Banner>
@@ -53,7 +49,6 @@ export const MainPage = () => {
               그리고 어디까지 성장하는지
             </div>
           </S.Section1>
-
           <S.Section2>
             <S.HealthLogo />
             <span>
@@ -123,20 +118,10 @@ export const MainPage = () => {
               확실하게 알려드려요 <br />
             </span>
           </S.Section2>
-
-          <S.ToggleWrap>
-            <S.ToggleSub>
-              헬스잇, BMI 란 무엇일까요??
-              <S.ToggleIcon onClick={test}>
-                {tog ? <BiChevronDown /> : <BiChevronRight />}
-              </S.ToggleIcon>
-            </S.ToggleSub>
-            {tog ? <MainToggle /> : ''}
-          </S.ToggleWrap>
+          <MainToggle />
         </S.Wrap>
         <Scroll />
       </S.Container>
-
       <Footer />
     </>
   );
