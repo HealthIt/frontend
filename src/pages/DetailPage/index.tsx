@@ -1,5 +1,106 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { Footer } from '../../components/common/Footer';
+import { Header } from '../../components/common/Header';
+import * as S from './style';
+import { useLocation, useParams } from 'react-router-dom';
+
+interface type {
+  calorie?: number;
+  carbs?: number;
+  fat?: number;
+  foodNm?: string;
+}
 
 export const DetailPage = () => {
-  return <div>DetailPage</div>;
+  // const [menu, setMenu] = useState();
+  const [menus, setMenus] = useState<any>([]);
+  const location = useLocation();
+  // console.log('adfsf', location);
+  let params = useParams();
+  // console.log('useParams', params);
+  // console.log(params);
+  // console.log(params.detailId);
+  const menuId = params.detailId;
+  // console.log('menuId', menuId);
+
+  const getMenu = async () => {
+    const response = await axios.get(`http://52.78.0.222/foods/v1/${menuId}`);
+    // console.log('fetch', response);
+    setMenus(response.data.data);
+    // console.log('responseData', menus);
+    // console.log(menus.foodNm);
+  };
+  useEffect(() => {
+    getMenu();
+  }, []);
+
+  const menuDetail = () => {
+    // console.log('menuDetail:', menus);
+    return <>{menus!.foodNm}</>;
+  };
+
+  // try {
+  //   const response = axios.get(`http://52.78.0.222/foods/v1/${menuId}`);
+  //   console.log('fetch', response);
+  //   const menu = response.data.data;
+  //   console.log('responseData', menu);
+  // } catch (error) {
+  //   console.log(error);
+  // }
+  return (
+    <>
+      <Header />
+      <S.Container>
+        <S.Wrapper>
+          {/* <button onClick={getMenu}>test</button> */}
+          <S.Top>
+            <div>
+              <img
+                src={menus.img}
+                alt={menus.foodNm}
+                width='290px'
+                height='220px'
+                style={{ borderRadius: '20px' }}
+              />
+            </div>
+            <S.TopInfo>
+              <div>{menus.foodNm}</div>
+              <div>{menus.calorie} Kcal</div>
+              <S.Table>
+                <div>
+                  <div>칼로리</div>
+                  <div>탄수화물</div>
+                  <div>단백질</div>
+                  <div>지방</div>
+                </div>
+                <div>
+                  <div>{menus.calorie} Kcal</div>
+                  <div>{menus.carbs} g</div>
+                  <div>{menus.protein} g</div>
+                  <div>{menus.fat} g</div>
+                </div>
+              </S.Table>
+            </S.TopInfo>
+          </S.Top>
+          <S.Bot>
+            <S.BotL>
+              <div>식단 / 추천 칼로리 비교</div>
+              <div></div>
+              <S.TextWrapper>
+                <div>{menus.foodNm}</div>
+                <div>{menus.calorie} Kcal</div>
+              </S.TextWrapper>
+            </S.BotL>
+            <S.BotR>
+              <div>음식정보</div>
+              <div>{menus.foodDesc}</div>
+            </S.BotR>
+          </S.Bot>
+        </S.Wrapper>
+      </S.Container>
+      <Footer />
+    </>
+  );
 };
