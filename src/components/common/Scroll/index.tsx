@@ -1,3 +1,4 @@
+//메인페이지 하단 플로팅 바 컴포넌트
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as S from './style';
