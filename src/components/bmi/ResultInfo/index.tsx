@@ -16,10 +16,9 @@ export const ResultInfo = () => {
           <S.BMIResult1>
             <div>이름 : {localStorage.Name}</div>
             <div>나이 : {localStorage.Age} 세</div>
-            <div>키 : {localStorage.Height} m</div>
           </S.BMIResult1>
           <S.BMIResult1>
-            <div>성별 : 여자</div>
+            <div>키 : {localStorage.Height} m</div>
             <div>몸무게 : {localStorage.Weight} kg</div>
           </S.BMIResult1>
         </div>

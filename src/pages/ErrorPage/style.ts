@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: calc(100vh - 70px - 150px);
 `;
 
 export const Wrapper = styled.div`
@@ -44,4 +45,5 @@ export const Btn = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 `;

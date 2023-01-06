@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import * as S from './style';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export const RecoMenu = () => {
   const bmi = localStorage.BMI;
@@ -14,8 +15,8 @@ export const RecoMenu = () => {
     } catch (error) {
       console.log(error);
     }
-    console.log(recoMenu);
-    console.log('1', recoMenu[0]);
+    // console.log(recoMenu);
+    // console.log('1', recoMenu[0]);
   }
   useEffect(() => {
     getMenu();
@@ -28,19 +29,21 @@ export const RecoMenu = () => {
   const menuList = recoMenu.map((name) => {
     return (
       <S.MenuWrapper key={name.id}>
-        <S.MenuImg>
-          <img
-            src={name.img}
-            alt={name.foodNm}
-            width='400px'
-            height='300px'
-            style={{ borderRadius: '20px 20px 10px 10px ' }}
-          />
-        </S.MenuImg>
-        <S.TextWrapper>
-          <S.MenuName>{name.foodNm}</S.MenuName>
-          <S.MenuKcal>{name.calorie}Kcal</S.MenuKcal>
-        </S.TextWrapper>
+        <Link to={`/detail/${name.id}`}>
+          <S.MenuImg>
+            <img
+              src={name.img}
+              alt={name.foodNm}
+              width='400px'
+              height='300px'
+              style={{ borderRadius: '20px 20px 10px 10px ' }}
+            />
+          </S.MenuImg>
+          <S.TextWrapper>
+            <S.MenuName>{name.foodNm}</S.MenuName>
+            <S.MenuKcal>{name.calorie}Kcal</S.MenuKcal>
+          </S.TextWrapper>
+        </Link>
       </S.MenuWrapper>
     );
   });

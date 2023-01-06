@@ -1,8 +1,13 @@
 import styled from 'styled-components';
-
+export const StickyScroll = styled.div`
+  /* position: sticky;
+  top: 100px; */
+  /* bottom: 150px; */
+`;
 export const Container = styled.div`
   width: 100%;
-  height: 100%;
+  min-height: cal(100vh - 150px);
+  /* height: calc(100vh - 70px - 150px); */
   position: relative;
 `;
 export const Wrap = styled.div`
@@ -83,7 +88,7 @@ export const First = styled.div`
   width: 1280px;
   height: 448px;
   border-radius: 20px;
-  background-image: url(https://user-images.githubusercontent.com/91241596/202880039-290294c1-0ffa-428e-a184-4b0a37e9491e.png);
+  background-image: url(https://user-images.githubusercontent.com/91241596/209931548-e7ec75ee-4c86-46db-8fbb-72e19c782290.png);
   z-index: 3;
 `;
 export const Inner = styled.div`
@@ -117,20 +122,20 @@ export const Sec = styled.div`
   width: 620px;
   height: 636px;
   border-radius: 20px;
-  background-image: url(https://user-images.githubusercontent.com/91241596/202880155-77f81679-5373-4111-9b5c-313a9fa01bfb.png);
+  background-image: url(https://user-images.githubusercontent.com/91241596/209868775-5b0efe1a-d442-4cd8-9b7d-b1afe7365d8e.png);
 `;
 export const Thi = styled.div`
   width: 620px;
   height: 636px;
   border-radius: 20px;
-  background-image: url(https://user-images.githubusercontent.com/91241596/202880219-0c1fd67f-1c31-4cac-a868-6484eaa31b41.png);
+  background-image: url(https://user-images.githubusercontent.com/91241596/209868837-a2823d2c-5cd6-40a8-a26f-70116d7ee391.png);
 `;
 export const Fou = styled.div`
   margin-top: 40px;
   width: 1280px;
   height: 448px;
   border-radius: 20px;
-  background-image: url(https://user-images.githubusercontent.com/91241596/202880238-59b32011-b2a0-4cd8-8d99-9e19c1464c57.png);
+  background-image: url(https://user-images.githubusercontent.com/91241596/209868909-bf7eaac5-182b-4e17-b408-cac058f92a97.png);
 `;
 export const Img = styled.div`
   display: flex;
@@ -142,7 +147,7 @@ export const Tomato = styled.div`
   z-index: 0;
   position: relative;
   bottom: 1800px;
-  right: 180px;
+  right: 380px;
 `;
 export const Paprika = styled.div`
   width: 290px;
@@ -151,7 +156,7 @@ export const Paprika = styled.div`
   z-index: 0;
   position: relative;
   bottom: 1350px;
-  left: 800px;
+  left: 660px;
 `;
 export const Leaf = styled.div`
   width: 290px;
@@ -160,35 +165,37 @@ export const Leaf = styled.div`
   z-index: 0;
   position: relative;
   top: 100px;
-  right: 550px;
+  right: 850px;
 `;
 export const TopLogo = styled.div`
-  width: 110px;
-  height: 90px;
-  background-image: url(https://user-images.githubusercontent.com/91241596/202879599-a02b5e2d-422b-4b76-8f65-11e67e166dc0.png);
-  z-index: 1;
+  margin-bottom: 8px;
+  width: 61px;
+  height: 32px;
+  background-image: url(https://user-images.githubusercontent.com/91241596/209869230-65fe9f8e-f471-4f2f-bf67-f8a411eee07c.png);
+  /* z-index: 1;
   position: relative;
-  bottom: 2530px;
-  right: 220px;
+  bottom: 2630px;
+  right: 220px; */
 `;
-export const MidLogo = styled.div`
-  width: 110px;
-  height: 90px;
-  background-image: url(https://user-images.githubusercontent.com/91241596/202879608-0de0c576-a28c-41fd-8c86-9ac54057c1f8.png);
-  z-index: 1;
+export const HealthLogo = styled.div`
+  margin-bottom: 8px;
+  width: 75px;
+  height: 40px;
+  background-image: url(https://user-images.githubusercontent.com/91241596/209868985-f6f22f09-2862-4206-9678-aae92575cf79.png);
+  /* z-index: 1;
   position: relative;
   bottom: 2000px;
-  right: 560px;
+  right: 560px; */
 `;
-export const BotLogo = styled.div`
-  width: 110px;
-  height: 90px;
-  background-image: url(https://user-images.githubusercontent.com/91241596/202879608-0de0c576-a28c-41fd-8c86-9ac54057c1f8.png);
-  z-index: 1;
-  position: relative;
-  top: 270px;
-  right: 680px;
-`;
+// export const BotLogo = styled.div`
+//   width: 110px;
+//   height: 90px;
+//   background-image: url(https://user-images.githubusercontent.com/91241596/202879608-0de0c576-a28c-41fd-8c86-9ac54057c1f8.png);
+//   z-index: 1;
+//   position: relative;
+//   top: 270px;
+//   right: 680px;
+// `;
 export const ToggleWrap = styled.div`
   margin: 174px 0 74px;
 `;
@@ -207,7 +214,7 @@ export const ToggleSub = styled.div`
     right: 0;
     bottom: 0;
     width: 1px;
-    background-color: #7ec585;
+    background-color: #aeb8c4;
     width: 1278px;
     height: 1px;
   }

@@ -42,7 +42,7 @@ export const MenuName = styled.div`
 export const MenuKcal = styled.div`
   margin-top: 4px;
   margin-bottom: 20px;
-  padding-left: 10px;
+  /* padding-left: 10px; */
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;

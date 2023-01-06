@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  min-height: 100vh;
   overflow: hidden;
-  background-color: mistyrose;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,6 +45,7 @@ export const InputWrapper = styled.div`
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    cursor: pointer;
     /* identical to box height */
     ::placeholder {
       color: #ababab;

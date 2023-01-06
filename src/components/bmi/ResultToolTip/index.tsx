@@ -11,19 +11,19 @@ export const ResultToolTip = () => {
   });
   useEffect(() => {
     if (localStorage.BMI < 18.5) {
-      console.log('저체중');
+      // console.log('저체중');
       setStyle({ right: '512px', color: '#0D6717' });
     } else if (localStorage.BMI < 22.9) {
-      console.log('정상');
+      // console.log('정상');
       setStyle({ right: '256px', color: '#C9DF8D' });
     } else if (localStorage.BMI < 24.9) {
-      console.log('과체중');
+      // console.log('과체중');
       setStyle({ right: '0', color: '#ACD179' });
     } else if (localStorage.BMI < 29.9) {
-      console.log('경도비만');
+      // console.log('경도비만');
       setStyle({ right: '-256px', color: '#77AE59' });
-    } else if (localStorage.BMI > 30) {
-      console.log('중등도비만');
+    } else if (localStorage.BMI > 29.9) {
+      // console.log('중등도비만');
       setStyle({ right: '-512px', color: '#0D6717' });
     }
   }, [bmi]);

@@ -11,6 +11,11 @@ html {
 }
 body {
   margin: 0;
+  /* 스크롤바숨기기 */
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 input, textarea { 
   -moz-user-select: auto;

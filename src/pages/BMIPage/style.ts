@@ -29,6 +29,7 @@ export const InputWrapper = styled.div`
   }
   > input {
     margin-bottom: 8px;
+    padding-bottom: 2px;
     background-color: #f8f8f8;
     width: 200px;
     border-bottom: 2px solid #7e7e7e;

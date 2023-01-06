@@ -4,14 +4,15 @@ import { ResultToolTip } from '../ResultToolTip';
 import * as S from './style';
 
 export const ResultBar = () => {
+  const h = localStorage.Height;
   if (localStorage.BMI < 18.5) {
-    console.log('저체중');
+    // console.log('저체중');
   } else if (localStorage.BMI < 22.9) {
-    console.log('정상');
+    // console.log('정상');
   } else if (localStorage.BMI < 24.9) {
-    console.log('과체중');
+    // console.log('과체중');
   } else if (localStorage.BMI > 25) {
-    console.log('비만');
+    // console.log('비만');
   }
   return (
     <div>
@@ -41,10 +42,10 @@ export const ResultBar = () => {
         </S.BarBMI>
         <S.Bar></S.Bar>
         <S.BarWeight>
-          <div>{localStorage.BMI} kg</div>
-          <div>{localStorage.BMI} kg</div>
-          <div>{localStorage.BMI} kg</div>
-          <div>{localStorage.BMI} kg</div>
+          <div>{(18.4 * h * h).toFixed(2)} kg</div>
+          <div>{(22.9 * h * h).toFixed(2)} kg</div>
+          <div>{(24.9 * h * h).toFixed(2)} kg</div>
+          <div>{(29.9 * h * h).toFixed(2)} kg</div>
         </S.BarWeight>
       </S.Wrapper>
     </div>

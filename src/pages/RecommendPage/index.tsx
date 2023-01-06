@@ -5,6 +5,8 @@ import * as S from './style';
 import { HiOutlineSearch } from 'react-icons/hi';
 import { SearchMenu } from '../../components/diet/SearchMenu';
 import { useNavigate } from 'react-router-dom';
+import { Header } from '../../components/common/Header';
+import { Footer } from '../../components/common/Footer';
 
 export const RecommendPage = () => {
   const navigate = useNavigate();
@@ -12,11 +14,13 @@ export const RecommendPage = () => {
   const [userInput, setUserInput] = useState('');
   const onInput = (e: any) => {
     setUserInput(e.target.value);
-    console.log(userInput);
+    // console.log(userInput);
+    localStorage.setItem('search', e.target.value);
   };
   return (
     <>
-      <SearchMenu />
+      <Header />
+      {/* <SearchMenu /> */}
       <S.Wrapper>
         <div></div>
         <div>헬스-잇 추천 식단보기</div>
@@ -25,19 +29,18 @@ export const RecommendPage = () => {
           <br />
           현재 자신의 몸에 맞는 식단들을 알아보세요!
         </div>
-        <S.InputWrapper>
+        <S.InputWrapper
+          onClick={(e) => {
+            navigate('/search');
+          }}
+        >
           <input
-            placeholder='식단 및 재료를 입력해 주세요.'
+            placeholder='더 많은 식단 검색하러가기'
             value={userInput}
             onChange={onInput}
             // onKeyUp={onKeyUp}
           />
-          <button
-            onClick={(e) => {
-              console.log('버튼', userInput);
-              navigate('/search');
-            }}
-          >
+          <button>
             <HiOutlineSearch />
           </button>
         </S.InputWrapper>
@@ -53,6 +56,7 @@ export const RecommendPage = () => {
           </S.Slide>
         </S.RecoDiet>
       </S.Wrapper>
+      <Footer />
     </>
   );
 };

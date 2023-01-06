@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   background-color: #fff;
+  min-height: calc(100vh - 150px - 70px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,14 +37,15 @@ export const BMIDiet = styled.div`
 `;
 export const ImgWrapper = styled.div`
   /* background-color: pink; */
-  position: absolute;
+  position: relative;
   display: flex;
+  z-index: 10;
   > div:first-child {
     background-image: url('https://user-images.githubusercontent.com/91241596/209669551-f942af7b-02b6-4740-a013-fc32feaf4a2b.png');
     width: 180px;
     height: 180px;
     position: relative;
-    bottom: 100px;
+    bottom: 1750px;
     left: 850px;
   }
   > div:nth-child(2) {
@@ -51,7 +53,7 @@ export const ImgWrapper = styled.div`
     width: 180px;
     height: 180px;
     position: relative;
-    top: 250px;
+    bottom: 1250px;
     right: 650px;
   }
   > div:nth-child(3) {
@@ -59,7 +61,7 @@ export const ImgWrapper = styled.div`
     width: 180px;
     height: 180px;
     position: relative;
-    top: 950px;
+    bottom: 700px;
     left: 550px;
   }
 `;

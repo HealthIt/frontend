@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import { ResultBar } from '../../components/bmi/ResultBar';
 import { ResultComment } from '../../components/bmi/ResultComment';
 import { ResultInfo } from '../../components/bmi/ResultInfo';
+import { Footer } from '../../components/common/Footer';
+import { Header } from '../../components/common/Header';
 import { ResultMenu } from '../../components/diet/ResultMenu';
 import * as S from './style';
 //로컬스토리지에 비엠아이 및 정보 값이 없으면 접근 불가
@@ -18,7 +20,8 @@ export const ResultPage = () => {
   }, []);
 
   return (
-    <div>
+    <>
+      <Header />
       <S.Wrapper>
         <div></div>
         <ResultInfo />
@@ -42,6 +45,7 @@ export const ResultPage = () => {
           <div></div>
         </S.ImgWrapper>
       </S.Wrapper>
-    </div>
+      <Footer />
+    </>
   );
 };

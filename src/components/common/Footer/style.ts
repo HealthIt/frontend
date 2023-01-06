@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  background-color: #c6c6c6;
+  background-color: #efefef;
   width: 100%;
   height: 150px;
   display: flex;
@@ -11,7 +11,7 @@ export const Text = styled.div`
   position: absolute;
   left: 320px;
   top: 26px;
-  color: #fff;
+  color: #4d4d4d;
   > div:first-child {
     font-weight: 400;
     font-size: 16px;
