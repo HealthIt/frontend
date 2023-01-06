@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 export const Container = styled.div`
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 export const Wrapper = styled.div`
   /* background-color: mistyrose; */
-  width: 1048px;
-  margin: 0 auto;
+  /* width: 720px; */
+  /* padding: 0 100px; */
 `;
 export const Top = styled.div`
   padding-top: 60px;
@@ -13,8 +17,8 @@ export const Top = styled.div`
   /* background-color: lavenderblush; */
   display: flex;
   > div:first-child {
-    margin-right: 40px;
-    background-color: mistyrose;
+    margin-right: 60px;
+    /* background-color: mistyrose; */
     width: 290px;
     height: 220px;
     border-radius: 20px;
@@ -99,14 +103,20 @@ export const Mid = styled.div`
 `;
 export const Bot = styled.div`
   /* background-color: thistle; */
+
   margin-top: 120px;
   padding-bottom: 100px;
   /* height: 380px; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  /* > div:first-child {
+    margin-right: 60px;
+  } */
 `;
 export const BotL = styled.div`
+  margin-right: 60px;
   /* background-color: pink; */
+  width: 220px;
   position: relative;
   width: 300px;
   > div:first-child {
@@ -145,18 +155,27 @@ export const TextWrapper = styled.div`
   }
 `;
 export const BotR = styled.div`
+  /* margin-left: 60px; */
+  width: 440px;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
 
   color: #191919;
   > div:first-child {
-    padding-left: 40px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #191919;
   }
   > div:nth-child(2) {
-    margin-top: 30px;
-    background-image: url('https://user-images.githubusercontent.com/91241596/209829050-24370dbb-33de-4a0e-aecc-cdb5e042232a.png');
-    width: 378px;
-    height: 378px;
+    margin-top: 60px;
+    /* padding-left: 10px; */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #191919;
   }
 `;

@@ -56,7 +56,15 @@ export const DetailPage = () => {
         <S.Wrapper>
           {/* <button onClick={getMenu}>test</button> */}
           <S.Top>
-            <div>메뉴 이미지</div>
+            <div>
+              <img
+                src={menus.img}
+                alt={menus.foodNm}
+                width='290px'
+                height='220px'
+                style={{ borderRadius: '20px' }}
+              />
+            </div>
             <S.TopInfo>
               <div>{menus.foodNm}</div>
               <div>{menus.calorie} Kcal</div>
@@ -76,10 +84,6 @@ export const DetailPage = () => {
               </S.Table>
             </S.TopInfo>
           </S.Top>
-          <S.Mid>
-            <div>음식정보</div>
-            <div>{menus.foodDesc}</div>
-          </S.Mid>
           <S.Bot>
             <S.BotL>
               <div>식단 / 추천 칼로리 비교</div>
@@ -90,8 +94,8 @@ export const DetailPage = () => {
               </S.TextWrapper>
             </S.BotL>
             <S.BotR>
-              <div>영양소 비율 그래프</div>
-              <div></div>
+              <div>음식정보</div>
+              <div>{menus.foodDesc}</div>
             </S.BotR>
           </S.Bot>
         </S.Wrapper>
