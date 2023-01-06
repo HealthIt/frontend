@@ -45,6 +45,7 @@ export const InputWrapper = styled.div`
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    cursor: pointer;
     /* identical to box height */
     ::placeholder {
       color: #ababab;

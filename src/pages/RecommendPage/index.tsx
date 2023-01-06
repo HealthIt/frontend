@@ -15,6 +15,7 @@ export const RecommendPage = () => {
   const onInput = (e: any) => {
     setUserInput(e.target.value);
     console.log(userInput);
+    localStorage.setItem('search', e.target.value);
   };
   return (
     <>
@@ -28,19 +29,18 @@ export const RecommendPage = () => {
           <br />
           현재 자신의 몸에 맞는 식단들을 알아보세요!
         </div>
-        <S.InputWrapper>
+        <S.InputWrapper
+          onClick={(e) => {
+            navigate('/search');
+          }}
+        >
           <input
-            placeholder='식단 및 재료를 입력해 주세요.'
+            placeholder='더 많은 식단 검색하러가기'
             value={userInput}
             onChange={onInput}
             // onKeyUp={onKeyUp}
           />
-          <button
-            onClick={(e) => {
-              console.log('버튼', userInput);
-              navigate('/search');
-            }}
-          >
+          <button>
             <HiOutlineSearch />
           </button>
         </S.InputWrapper>
