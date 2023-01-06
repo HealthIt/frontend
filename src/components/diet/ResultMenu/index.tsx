@@ -54,7 +54,7 @@ export const ResultMenu = () => {
   return (
     <>
       <S.Wrapper>
-        <button onClick={getMenu}>test</button>
+        {/* <button onClick={getMenu}>test</button> */}
         {/* <S.MenuContainer>
           {recoMenu.map((name) => (
             <S.MenuWrapper key={name.id}>
