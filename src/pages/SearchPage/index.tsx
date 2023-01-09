@@ -26,7 +26,7 @@ export const SearchPage = () => {
         <div>헬스-잇 검색하기</div>
         <S.InputWrapper>
           <input
-            placeholder='식단 및 재료를 입력해 주세요.'
+            placeholder='먹고 싶은 음식을 검색해주세요.'
             onChange={onSearch}
             value={searchData}
           />
